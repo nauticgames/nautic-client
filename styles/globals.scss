@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+$primary_blue: #2f57f7;
+$primary_gray: #505050;
+$secondary_gray: #595959;
+$light: #d3d3d3;
+
+.wrapped {
+  width: 90%;
+}
+
+@import "./root.scss";

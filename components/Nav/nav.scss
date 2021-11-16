@@ -1,0 +1,27 @@
+.header__nav {
+  height: 100%;
+
+  ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: 42px;
+
+      a {
+        font-weight: 400;
+        color: #767676;
+        font-size: 1em;
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+          color: #3d3d3d;
+          transition: color 0.2s;
+        }
+      }
+    }
+  }
+}
