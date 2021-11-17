@@ -3,12 +3,12 @@ import Game from "./Game";
 
 const Games = () => {
   return (
-    <section className="games__section" id="games">
-      <div className="games__title wrapped">
+    <section className="games__section wrapped" id="games">
+      <div className="games__title">
         <h2>Games</h2>
         <hr />
       </div>
-      <div className="games__container wrapped">
+      <div className="games__container">
         <Game
           img="/assets/ox-game.png"
           description="Compete against other players in a soccer game and collect rewards in crypto"

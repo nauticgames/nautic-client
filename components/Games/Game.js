@@ -9,7 +9,7 @@ const Game = ({ img, description }) => {
       <h3>{description}</h3>
       <div className="visit__btn">
         <p>Visit</p>
-        <Icon path={mdiArrowRight} size={1} color="#505050" />
+        <Icon path={mdiArrowRight} size={1} color="#6e6e6e" />
       </div>
     </div>
   );
