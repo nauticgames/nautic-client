@@ -1,9 +1,7 @@
 .games__section {
-  margin: 100px 0;
+  margin: 80px auto 0 auto;
 
   .games__title {
-    margin: auto;
-
     h2 {
       font-size: 2em;
       font-weight: 500;
@@ -17,7 +15,6 @@
   }
 
   .games__container {
-    margin: auto;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -31,7 +28,7 @@
       border: 2px solid transparent;
       transition: border 0.3s ease;
       background-color: #fff;
-      border-radius: 15px;
+      border-radius: 10px;
       margin-bottom: 50px;
       text-align: center;
 
@@ -54,8 +51,23 @@
         justify-content: center;
         align-items: center;
 
+        &:hover {
+          cursor: pointer;
+
+          svg {
+            transform: translateX(5px);
+            transition: transform 0.3s ease;
+          }
+
+          p {
+            transition: all 0.3s ease;
+            text-decoration: underline;
+            color: rgb(51, 51, 51);
+          }
+        }
+
         p {
-          color: $primary_gray;
+          color: $light_gray;
           font-weight: 500;
           font-size: 1.3em;
           margin-right: 5px;
@@ -67,14 +79,8 @@
       }
 
       &:hover {
-        cursor: pointer;
         border: 2px solid $light;
         transition: border 0.3s ease;
-
-        .visit__btn svg {
-          transform: translateX(5px);
-          transition: transform 0.3s ease;
-        }
       }
     }
   }

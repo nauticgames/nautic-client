@@ -2,6 +2,9 @@ import Head from "next/head";
 import Games from "../components/Games/Games";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Mission from "../components/Mission";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -31,6 +34,9 @@ const Home = () => {
       <main style={{ paddingTop: 80 }}>
         <Hero />
         <Games />
+        <Mission />
+        <Contact />
+        <Footer />
       </main>
     </>
   );

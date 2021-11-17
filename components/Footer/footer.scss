@@ -1,0 +1,30 @@
+.home__footer {
+  width: 100%;
+  height: 100px;
+  background-color: $primary_gray;
+
+  .wrapped {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 70%;
+        object-fit: contain;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  }
+}

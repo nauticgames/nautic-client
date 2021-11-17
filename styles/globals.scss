@@ -5,6 +5,10 @@
   font-family: "Rubik", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +16,8 @@ html {
 $primary_blue: #2f57f7;
 $primary_gray: #505050;
 $secondary_gray: #595959;
-$light: #d3d3d3;
+$light_gray: #6e6e6e;
+$light: #e0e0e0;
 
 .wrapped {
   width: 90%;
