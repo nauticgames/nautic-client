@@ -1,8 +1,6 @@
-import React from "react";
-
 const Nav = () => {
   return (
-    <nav className="header__nav">
+    <nav className="main__nav">
       <ul>
         <li>
           <a href="#games">Games</a>
