@@ -1,19 +1,27 @@
-import React from "react";
+import { Grid } from "semantic-ui-react";
 import Game from "./Game";
+import GamesData from "./Games.json";
 
 const Games = () => {
   return (
     <section className="games__section wrapped" id="games">
-      <div className="games__title">
-        <h2>Games</h2>
-        <hr />
-      </div>
-      <div className="games__container">
-        <Game
-          img="/assets/ox-game.png"
-          description="Compete against other players in a soccer game and collect rewards in crypto"
-        />
-      </div>
+      <Grid>
+        <Grid.Column>
+          <h2 className="games__title">Games</h2>
+          <hr />
+        </Grid.Column>
+      </Grid>
+      <Grid className="games__grid" centered>
+        {GamesData.map((game) => (
+          <Grid.Column key={game.id} mobile={16} tablet={6} computer={4}>
+            <Game
+              description={game.description}
+              img={game.img}
+              link={game.link}
+            />
+          </Grid.Column>
+        ))}
+      </Grid>
     </section>
   );
 };
