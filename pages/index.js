@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Mission from "../components/Mission";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Team from "../components/Team/Team";
 
 const Home = () => {
   return (
@@ -18,7 +19,11 @@ const Home = () => {
           rel="stylesheet"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
@@ -34,6 +39,7 @@ const Home = () => {
       <main style={{ paddingTop: 80 }}>
         <Hero />
         <Games />
+        <Team />
         <Mission />
         <Contact />
         <Footer />

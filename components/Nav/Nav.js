@@ -6,6 +6,9 @@ const Nav = () => {
           <a href="#games">Games</a>
         </li>
         <li>
+          <a href="#team">Team</a>
+        </li>
+        <li>
           <a href="#mission">Our Mission</a>
         </li>
         <li>
