@@ -1,24 +1,19 @@
 import { Grid } from "semantic-ui-react";
 import Game from "./Game";
-import GamesData from "./Games.json";
+import Data from "./Data";
 
 const Games = () => {
   return (
     <section className="games__section wrapped" id="games">
       <Grid>
         <Grid.Column>
-          <h2 className="games__title">Games</h2>
-          <hr />
+          <h2 className="section__title">Games</h2>
         </Grid.Column>
       </Grid>
       <Grid className="games__grid" centered>
-        {GamesData.map((game) => (
-          <Grid.Column key={game.id} mobile={16} tablet={6} computer={4}>
-            <Game
-              description={game.description}
-              img={game.img}
-              link={game.link}
-            />
+        {Data.map((game, index) => (
+          <Grid.Column key={index} mobile={16} tablet={6} computer={4}>
+            <Game game={game} />
           </Grid.Column>
         ))}
       </Grid>

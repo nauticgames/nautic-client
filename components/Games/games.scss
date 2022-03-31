@@ -1,17 +1,5 @@
 .games__section {
-  margin: 80px auto 0 auto;
-
-  .games__title {
-    font-size: 3.5em;
-    font-weight: 500;
-    color: $primary_gray;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  hr {
-    opacity: 0;
-  }
+  margin: 130px auto 0 auto;
 
   .game__card {
     margin-bottom: 40px !important;
@@ -24,10 +12,11 @@
     border-radius: 10px;
     text-align: center;
 
-    img {
+    .card__image {
       width: 100%;
-      margin-bottom: 30px;
-      object-fit: contain;
+      height: 150px;
+      position: relative;
+      margin-bottom: 20px;
     }
 
     h3 {
@@ -60,14 +49,6 @@
   .games__section {
     .games__grid {
       justify-content: initial !important;
-    }
-
-    .games__title {
-      text-align: initial;
-    }
-
-    hr {
-      opacity: 0.15;
     }
 
     .game__card {

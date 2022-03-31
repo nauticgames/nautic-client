@@ -44,5 +44,21 @@ ul {
   list-style: none;
 }
 
+.section__title {
+  font-size: 3.5em;
+  font-weight: 500;
+  color: $primary_gray;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__title {
+    text-align: initial;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
 @import "./normalize.scss";
 @import "./root.scss";
